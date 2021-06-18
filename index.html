@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Muse Me</title>
+  <link rel="stylesheet" href="museme.css">
+</head>
+
+<body>
+  <!-- schrool loader -->
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <center>
+    <h1 style="color: Red; font-family: cursive; font-size:50px;">Muse Me</h1>
+  </center>
+  <!-- navbar -->
+  <div class="content">
+    <div id="navbar">
+      <button class="active" onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='aboutus.html'" style>ABOUT US</button>
+      <button onclick="window.location.href='contactus.html'">CONTACT US</button>
+      <button onclick="window.location.href='login.html'" style="background-color: dodgerblue; float:right;">Log
+        in</button>
+      <button onclick="window.location.href='signup.html'"
+        style="background-color: dodgerblue; float:right;">Register</button>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- slideshow -->
+
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img class="simg" src="tylerhilton.jpg" alt="Tyler Hilton" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="gunsNroses.jpg" alt="Guns and Roses" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="onedirection.jpg" alt="One Direction" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="simg" src="greenday.jpg" alt="Green Day" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="myfav.jpg" alt="My Favorites" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="nirvana.jpg" alt="Nirvana" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="thebeatles.jpg" alt="The Beatles" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="Acdc.jpg" alt="AC DC" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img class="simg" src="metallica.png" alt="metallica style=" width:100%">
+      </div>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- line -->
+    <hr class="new">
+    </hr>
+    <br>
+    <!-- Artistss -->
+    <h1 class="heading">Best of Artist</h1>
+
+    <div class="container" style="background-color:#000f1a;">
+      <div class="responsive">
+        <div class="gallery">
+          <a href="taylorswift.html">
+            <center><img src="taylorswift.jpg" alt="Taylor Swift"></center>
+          </a>
+          <div class="desc"> Taylor Swift</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="katyperry.html">
+            <center><img src="katyperry.jpg" alt="Katy Perry"></center>
+          </a>
+          <div class="desc"> Katy Perry</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="brunomars.html">
+            <center><img src="brunomars.jpg" alt="Bruno Mars"></center>
+          </a>
+          <div class="desc">Bruno Mars</div>
+        </div>
+
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="sabrina.html">
+            <center><img src="sabrinacarpenter.jpg" alt=" Sabrina Carpenter"></center>
+          </a>
+          <div class="desc"> Sabrina Carpenter</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="eminem.html">
+            <center><img src="Eminem.jpg" alt="Eminem"></center>
+          </a>
+          <div class="desc">Eminem</div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <br>
+    </div>
+    <!-- line -->
+    <hr class="new">
+    </hr>
+    <br>
+    <!-- Artistss -->
+    <h1 class="heading">Best of Genre</h1>
+    <br>
+
+
+    <div class="container" style="background-color:#000f1a; opacity:100%;">
+      <div class="responsive">
+        <div class="gallery">
+          <a href="edm.html">
+            <center><img src="EDM.jpg" alt="EDM"></center>
+          </a>
+          <div class="desc">EDM</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="pop.html">
+            <center><img src="popmusic.jpeg" alt="Pop Music"></center>
+          </a>
+          <div class="desc">Pop Music</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="rock.html">
+            <center><img src="Rockmusic.jpg" alt="Bruno Mard"></center>
+          </a>
+          <div class="desc">Rock music</div>
+        </div>
+
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="hiphop.html">
+            <center><img src="Hiphop.jpg" alt="Hip Hop Music"></center>
+          </a>
+          <div class="desc"> Hip Hop Music</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="country.html">
+            <center><img src="Countrymusic.jpg" alt="Country Music"></center>
+          </a>
+          <div class="desc">Country Music</div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <br>
+    </div>
+
+
+    <!-- line -->
+    <hr class="new">
+    </hr>
+    <br>
+    <!-- Artistss -->
+    <h1 class="heading">Best of Decades</h1>
+    <br>
+
+    <div class="container" style="background-color:#000f1a; opacity:100%;">
+      <div class="responsive">
+        <div class="gallery">
+          <a href="70_s.html">
+            <center><img src="70_s.jpg" alt="70's"></center>
+          </a>
+          <div class="desc">70's</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="80_s.html">
+            <center><img src="80_s.jpg" alt="80's"></center>
+          </a>
+          <div class="desc">80's</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="90_s.html">
+            <center><img src="90_s.jpg" alt="90's"></center>
+          </a>
+          <div class="desc">90's</div>
+        </div>
+
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a href="2000_s.html">
+            <center><img src="2000_s.jfif" alt="2000's"></center>
+          </a>
+          <div class="desc"> 2000's</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="2010_s.html">
+            <center><img src="2010_s.jfif" alt="2010's"></center>
+          </a>
+          <div class="desc">2010's</div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <br>
+    </div>
+
+    <!-- line -->
+    <hr class="new">
+    </hr>
+
+    <!-- Artistss -->
+    <h1 class="heading">Musetown</h1>
+    <br>
+
+    <div class="container" style="background-color:#000f1a; opacity:100%;">
+      <div class="responsive">
+        <center>
+          <div class="gallery">
+            <a href="myfavorite.html">
+              <img src="myfav.jpg" alt="My Favourite">
+            </a>
+            <div class="desc">My Favourite</div>
+          </div>
+        </center>
+      </div>
+      <div class="clearfix"></div>
+      <br>
+    </div>
+
+
+    <!-- line -->
+    <hr class="new">
+    </hr>
+    <!-- footer -->
+
+
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="column" style="float:left;">
+          <h2>MuseMe</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right;">
+          <center>
+            <h2>Explore</h2>
+          </center>
+          <ul>
+            <li>My Favourite</li>
+            <li>Artists</li>
+            <li>Genre</li>
+            <li>Best of years</li>
+            <li>Best of all time</li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right">
+          <h2>About Us</h2>
+          <p style="text-align:justify;">MuseMe is a digital tool for all the music lovers out there. We at MuseMe focus
+            on making it our top priority to recommend you with the best quality music that will be delightful to your
+            ears. We have everything for everyone. We have fitered the music according to different decades different
+            Artists as well as different Genre. Also we have included our faviorate playlist that will have our
+            faviourate songs for you to listen to
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

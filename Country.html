@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Country Music</title>
+  <link rel="stylesheet" href="museme.css">
+</head>
+
+<body>
+  <!-- schrool loader -->
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <!-- navbar -->
+  <div class="content">
+    <div id="navbar">
+      <button class="active" onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='aboutus.html'" style>ABOUT US</button>
+      <button onclick="window.location.href='contactus.html'">CONTACT US</button>
+      <button onclick="window.location.href='login.html'" style="background-color: dodgerblue; float:right;">Log
+        in</button>
+      <button onclick="window.location.href='signup.html'"
+        style="background-color: dodgerblue; float:right;">Register</button>
+    </div>
+
+    <!-- taylor swift -->
+    <h1 class="heading">Best Of Country Music</h1>
+    <center><img class="himage" alt="Country Music" src="countrymusic.jpg"></img></center>
+
+    <!-- playlist -->
+    <center>
+      <div class="playbutton" style="margin-bottom:10px; background-color:dodgerblue">
+        <a class="song"
+          href="https://music.youtube.com/watch?v=Y2E71oe0aSM&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">Start Radio</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=Y2E71oe0aSM&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">1.
+          10,000 hours</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=3pQc25SCaNs&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">2.
+          Hell Right</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=87Q8HQCWSg4&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">3.
+          Tip of My Tongue</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=qcCH6JpcK5w&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">4.
+          I Hope</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=j_A8Zjwr9m0&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">5.
+          More Hearts than Mine</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=Cd_D3DKVm2U&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">6.
+          Love You Too Late</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=S6wIyVsX6Mc&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">7.
+          For My Daughter</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=EKhPFLxoktI&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">8.
+          Tay Money</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=0lxA1FXOiv0&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">9.
+          One Man Band</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=a5Y_usyu3eo&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">10.
+          Tookie Tookie</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=3A85JE2ugiI&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">11.
+          Her World Or Mine</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=jLqiix4Hkjc&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">12.
+          My Heart Is a bar</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=ZEWGyyLiqY4&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">13.
+          God's Country</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=P7kqqmr2HWI&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">14.
+          Even Though I'm Leaving</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=mS3TeZEp_PE&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">15.
+          Good As You</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=Ioz93bSi2uc&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">16.
+          Knockin' Boots</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=7Lb9dq-JZFI&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">17.
+          Beer Never Broke My Heart</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=hNRJjDm2sQE&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">18.
+          Good Vibes</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=dRX0wDNK6S4&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">19.
+          Heaven</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=zXDAYlhdkyg&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">20.
+          H.O.L.Y</a>
+      </div>
+      <div class="playbutton">
+        <a class="song" href="https://music.youtube.com/watch?v=SoIKv3xxuMA&list=PLiDpE5JOXvy15BAQk5-xpAY8cgOJZDKlD">21.
+          Blue Ain't Your color</a>
+      </div>
+    </center>
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="column" style="float:left;">
+          <h2>MuseMe</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right;">
+          <center>
+            <h2>Explore</h2>
+          </center>
+          <ul>
+            <li>My Favourite</li>
+            <li>Artists</li>
+            <li>Genre</li>
+            <li>Best of years</li>
+            <li>Best of all time</li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right">
+          <h2>About Us</h2>
+          <p style="text-align:justify;">MuseMe is a digital tool for all the music lovers out there. We at MuseMe focus
+            on making it our top priority to recommend you with the best quality music that will be delightful to your
+            ears. We have everything for everyone. We have fitered the music according to different decades different
+            Artists as well as different Genre. Also we have included our faviorate playlist that will have our
+            faviourate songs for you to listen to
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

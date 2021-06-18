@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="museme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- schrool loader -->
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <!-- navbar -->
+  <div class="content">
+    <div id="navbar">
+      <button class="active" onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='aboutus.html'" style>ABOUT US</button>
+      <button onclick="window.location.href='contactus.html'">CONTACT US</button>
+      <button onclick="window.location.href='login.html'" style="background-color: dodgerblue; float:right;">Log
+        in</button>
+      <button onclick="window.location.href='signup.html'"
+        style="background-color: dodgerblue; float:right;">Register</button>
+    </div>
+
+    <!-- contact us -->
+
+    <h3>Contact Us</h3>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">India</option>
+          <option value="usa">China</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <button type="submit" onclick="contact()" class="registerbtn"
+          style="background-color:dodgerblue;">Submit</button>
+      </form>
+    </div>
+
+
+    <script>
+      function contact() {
+        window.alert("Thank you for your Feedback!!");
+      }
+    </script>
+    <!-- footer -->
+
+    <div class="footer">
+      <div class="row">
+        <div class="column" style="float:left;">
+          <h2>MuseMe</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right;">
+          <center>
+            <h2>Explore</h2>
+          </center>
+          <ul>
+            <li>My Favourite</li>
+            <li>Artists</li>
+            <li>Genre</li>
+            <li>Best of years</li>
+            <li>Best of all time</li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right">
+          <h2>About Us</h2>
+          <p style="text-align:justify;">MuseMe is a digital tool for all the music lovers out there. We at MuseMe focus
+            on making it our top priority to recommend you with the best quality music that will be delightful to your
+            ears. We have everything for everyone. We have fitered the music according to different decades different
+            Artists as well as different Genre. Also we have included our faviorate playlist that will have our
+            faviourate songs for you to listen to
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>

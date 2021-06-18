@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="museme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- schrool loader -->
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <!-- navbar -->
+  <div class="content">
+    <div id="navbar">
+      <button class="active" onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='aboutus.html'" style>ABOUT US</button>
+      <button onclick="window.location.href='contactus.html'">CONTACT US</button>
+      <button onclick="window.location.href='login.html'" style="background-color: dodgerblue; float:right;">Log
+        in</button>
+      <button onclick="window.location.href='signup.html'"
+        style="background-color: dodgerblue; float:right;">Register</button>
+    </div>
+
+
+    <!-- loginform -->
+    <div class="container">
+      <form>
+        <div class="loginrow">
+          <h2 style="text-align:center">Login with Social Media or Manually</h2>
+          <div class="vl">
+            <span class="vl-innertext">or</span>
+          </div>
+
+          <div class="logincol">
+            <a href="https://www.facebook.com/" class="fb btn">
+              <em class="fa fa-facebook fa-fw"></em> Login with Facebook
+            </a>
+            <a href="https://twitter.com/login/" class="twitter btn">
+              <em class="fa fa-twitter fa-fw"></em> Login with Twitter
+            </a>
+            <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&osid=1&continue=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities%3Fhl%3Den&followup=https%3A%2F%2Fplus.google.com%2Fapps%2Factivities%3Fhl%3Den&hl=en&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+              class="google btn"><em class="fa fa-google fa-fw">
+              </em> Login with Google+
+            </a>
+          </div>
+
+          <div class="logincol">
+            <div class="hide-md-lg">
+              <p>Or sign in manually:</p>
+            </div>
+
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button class="registerbtn" style="background-color:dodgerblue;" onclick="login()">login</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <script>
+      function login() {
+        window.alert("Log in Successfull!!");
+      }
+    </script>
+    <div class="bottom-container">
+      <div class="loginrow">
+        <button class="registerbtn" onclick="window.location.href='signup.html'">Sign up</button>
+      </div>
+    </div>
+    <!-- footer -->
+
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="column" style="float:left;">
+          <h2>MuseMe</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right;">
+          <center>
+            <h2>Explore</h2>
+          </center>
+          <ul>
+            <li>My Favourite</li>
+            <li>Artists</li>
+            <li>Genre</li>
+            <li>Best of years</li>
+            <li>Best of all time</li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right">
+          <h2>About Us</h2>
+          <p style="text-align:justify;">MuseMe is a digital tool for all the music lovers out there. We at MuseMe focus
+            on making it our top priority to recommend you with the best quality music that will be delightful to your
+            ears. We have everything for everyone. We have fitered the music according to different decades different
+            Artists as well as different Genre. Also we have included our faviorate playlist that will have our
+            faviourate songs for you to listen to
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

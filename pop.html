@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Pop Music</title>
+  <link rel="stylesheet" href="museme.css">
+</head>
+
+<body>
+  <!-- schrool loader -->
+  <div class="header">
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+  <!-- navbar -->
+  <div class="content">
+    <div id="navbar">
+      <button class="active" onclick="window.location.href='index.html'">HOME</button>
+      <button onclick="window.location.href='aboutus.html'" style>ABOUT US</button>
+      <button onclick="window.location.href='contactus.html'">CONTACT US</button>
+      <button onclick="window.location.href='login.html'" style="background-color: dodgerblue; float:right;">Log
+        in</button>
+      <button onclick="window.location.href='signup.html'"
+        style="background-color: dodgerblue; float:right;">Register</button>
+    </div>
+    <!-- taylor swift -->
+    <h1 class="heading">Best Of Pop</h1>
+    <center><img class="himage" alt="Pop Music" src="popmusic.jpeg"></img></center>
+
+    <!-- playlist -->
+    <center></center>
+    <div class="playbutton" style="margin-bottom:10px; background-color:dodgerblue">
+      <a class="song" href="https://music.youtube.com/watch?v=fRgWBN8yt_E&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">Start
+        Radio</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=y6Sxv-sUYtM&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">1.
+        Happy</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=My2FRPA3Gf8&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">2.
+        Wrecking Ball</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=9bZkp7q19f0&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">3.
+        Gangam Style</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=rYEDA3JcQqw&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">4.
+        Rolling in the deep</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=LjhCEhWiKXk&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">5.
+        Just the Way You Are</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=qrO4YZeyl0I&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">6.
+        Bad Romance</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=tAp9BKosZXs&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">7. I
+        Kissed a Girl </a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=CvBfHwUxHIk&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">8.
+        Umbrella</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=bd2B6SjMh_w&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">9.
+        Crazy</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=RtcOLN6Ley4&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">10.
+        you're Beautiful</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=weRHyjj34ZE&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">11.
+        Whenever Wherever</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=c18441Eh_WE&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">12.
+        Can't Get out of My head</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=C-u5WLJ9Yk4&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">13.
+        Baby One More Time</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=e0ufPc1gzWg&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">14.
+        No Doubt- Don't Speak</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=WEQveK3_o6s&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">15.
+        Spice Girls- Wannabe</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=8WEtxJ4-sh4&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">16.
+        Waterfalls</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=oYLr9FtYtME&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">17.
+        Street of Philadelhia</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=3JWTaaS7LdU&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">18. I
+        Will Always Love You </a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=xwtdhWltSIg&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">19.
+        Losing my Religion</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=djV11Xbc914&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">20.
+        Take Me On</a>
+    </div>
+    <div class="playbutton">
+      <a class="song" href="https://music.youtube.com/watch?v=PIb6AZdTr-A&list=PLN_LzJ7ipZLeG3ti2r-Xz1yPiqRw27CKT">21.
+        Girls Just Want to have Fun</a>
+    </div>
+    </center>
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="column" style="float:left;">
+          <h2>MuseMe</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right;">
+          <center>
+            <h2>Explore</h2>
+          </center>
+          <ul>
+            <li>My Favourite</li>
+            <li>Artists</li>
+            <li>Genre</li>
+            <li>Best of years</li>
+            <li>Best of all time</li>
+          </ul>
+        </div>
+
+        <div class="column" style="float:right">
+          <h2>About Us</h2>
+          <p style="text-align:justify;">MuseMe is a digital tool for all the music lovers out there. We at MuseMe focus
+            on making it our top priority to recommend you with the best quality music that will be delightful to your
+            ears. We have everything for everyone. We have fitered the music according to different decades different
+            Artists as well as different Genre. Also we have included our faviorate playlist that will have our
+            faviourate songs for you to listen to
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
